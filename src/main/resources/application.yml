@@ -1,0 +1,17 @@
+# DataSource is configured programmatically in DataSourceConfig.
+# Set DATABASE_URL=postgres://user:pass@host:port/dbname?sslmode=require
+# or individual DB_HOST / DB_PORT / DB_NAME / DB_USER / DB_PASSWORD / DB_SSL_MODE
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+  flyway:
+    enabled: true
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+server:
+  port: 8080
