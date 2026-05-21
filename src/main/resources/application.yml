@@ -8,6 +8,8 @@ spring:
     show-sql: false
   flyway:
     enabled: true
+  jackson:
+    property-naming-strategy: SNAKE_CASE
 
 springdoc:
   swagger-ui:
