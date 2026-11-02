@@ -1,5 +1,5 @@
 # Build stage
-FROM gradle:8-jdk21 AS build
+FROM gradle:9-jdk21 AS build
 WORKDIR /app
 COPY build.gradle.kts settings.gradle.kts ./
 RUN gradle dependencies --no-daemon
